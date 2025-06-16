@@ -13,5 +13,14 @@ public class Main {
         };
 
         System.out.println(mul.compute(3, 4));
+
+        Calculator mulmul = new Calculator() {
+            @Override
+            public int compute(int a, int b) {
+                return a * b * a * b;
+            }
+        };
+
+        System.out.println(mulmul.compute(3, 4));
     }
 }
