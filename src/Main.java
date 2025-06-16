@@ -12,7 +12,7 @@ public class Main {
             }
         };
 
-        System.out.println(mul.compute(3, 4));
+        System.out.println(mul.compute(100, 4));
 
         Calculator mulmul = new Calculator() {
             @Override
@@ -21,6 +21,15 @@ public class Main {
             }
         };
 
-        System.out.println(mulmul.compute(3, 4));
+        System.out.println(mulmul.compute(100, 4));
+
+        Calculator div = new Calculator() {
+            @Override
+            public int compute(int a, int b) {
+                return a / b;
+            }
+        };
+
+        System.out.println(div.compute(100, 4));
     }
 }
